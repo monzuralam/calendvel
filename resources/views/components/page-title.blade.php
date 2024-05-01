@@ -6,10 +6,10 @@
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    @if (route('dashboard'))
+                    @if (request()->routeIs('dashboard'))
                         <li class="breadcrumb-item active">{{ $heading }}</li>
                     @else
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
                         <li class="breadcrumb-item active">{{ $heading }}</li>
                     @endif
                 </ol>
