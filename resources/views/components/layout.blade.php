@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <x-head/>
+    <x-head :title="$title ?? 'Dashboard | CalendVel'"/>
 </head>
 
 <body>
